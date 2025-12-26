@@ -78,13 +78,13 @@
 
 ## Slash Command 一覧
 
-| コマンド | 説明 | 例 |
-|---------|------|-----|
-| `/distill` | inboxメモをアトミックノートに分割 | `/distill 2025-12-01_kickoff_meeting.md` |
-| `/moc` | テーマ別MOC（索引）を生成・更新 | `/moc decisions` |
-| `/ask` | 質問に根拠リンク付きで回答 | `/ask 意思決定は何？根拠は？` |
-| `/weekly-review` | 週次の棚卸しと要約 | `/weekly-review` |
-| `/capture` | 30秒でinboxに入れるテンプレ | `/capture 新しいアイデア` |
+| コマンド | 説明 | 呼び出すSubagent | 例 |
+|---------|------|-----------------|-----|
+| `/distill` | inboxメモをアトミックノートに分割 | **note-distiller** | `/distill 2025-12-01_kickoff_meeting.md` |
+| `/moc` | テーマ別MOC（索引）を生成・更新 | **moc-builder** | `/moc decisions` |
+| `/ask` | 質問に根拠リンク付きで回答 | **knowledge-qa** | `/ask 意思決定は何？根拠は？` |
+| `/weekly-review` | 週次の棚卸しと要約 | （直接実行） | `/weekly-review` |
+| `/capture` | 30秒でinboxに入れるテンプレ | （直接実行） | `/capture 新しいアイデア` |
 
 ---
 
